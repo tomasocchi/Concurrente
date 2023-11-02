@@ -4,6 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ControlFerry extends Thread {
+
     private Ferry ferry;
 
     public ControlFerry(Ferry f) {
@@ -15,12 +16,13 @@ public class ControlFerry extends Thread {
             ferry.empezarViaje();
 
             try {
-                Thread.sleep(1226);
-            } catch (InterruptedException e) {
-                Logger.getLogger(ControlFerry.class.getName()).log(Level.SEVERE, null, e);
+                Thread.sleep(1225);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(ControlFerry.class.getName()).log(Level.SEVERE, null, ex);
             }
 
             ferry.terminarViaje();
+
             ferry.permitirAcceso();
         }
     }

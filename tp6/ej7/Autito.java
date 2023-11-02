@@ -8,13 +8,13 @@ import java.util.logging.Logger;
  *
  * @author Tomas
  */
-public class Pasajero extends Thread {
+public class Autito extends Thread {
 
     private Ferry ferry;
 
-    public Pasajero(Ferry f, String s) {
+    public Autito(Ferry f, String n) {
         ferry = f;
-        this.setName(s);
+        this.setName(n);
     }
 
     public void run() {
@@ -23,9 +23,10 @@ public class Pasajero extends Thread {
         try {
             Thread.sleep(200);
         } catch (InterruptedException ex) {
-            Logger.getLogger(Pasajero.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Autito.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         ferry.bajarse();
     }
+
 }
