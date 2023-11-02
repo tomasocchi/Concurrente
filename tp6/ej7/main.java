@@ -6,6 +6,7 @@ package tp6.ej7;
 public class main {
 
     public static void main(String[] args) {
+        //Use misma longitud, pero se puede usar distintas para cada objeto
         Autito[] a = new Autito[6];
         Pasajero[] p = new Pasajero[6];
         Ferry f = new Ferry(5, a.length, p.length);

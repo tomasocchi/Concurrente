@@ -4,10 +4,7 @@ package tp6.ej7;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Tomas
- */
+
 public class Pasajero extends Thread {
 
     private Ferry ferry;

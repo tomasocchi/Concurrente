@@ -26,6 +26,7 @@ public class Ferry {
         espaciosActuales++;
         System.out.println("El " + Thread.currentThread().getName() + " se acaba de subir al Ferry, cantidad de espacios ocupados: " + espaciosActuales);
 
+        //Condicion cantidad de Pasajeros y autos actuales menores al espacio total
         if (cantidadAP == 0 && espaciosActuales > 0) {
             espaciosActuales = espacios;
         }
