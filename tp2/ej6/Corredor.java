@@ -1,5 +1,5 @@
 
-package tp2;
+package tp2.ej6;
 import java.util.Random; 
 import java.util.logging.Level;
 import java.util.logging.Logger; 

@@ -2,30 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp2;
+package tp2.ej;
 
 /**
  *
  * @author Tomas
  */
-public class RunnableCdor implements Runnable{
-    
-Dato unContador;  
+public class Dato {
+    private int valor;
 
-public RunnableCdor (Dato elCdor){
+    void contar(){
+        valor = ++valor;
+    }
 
-unContador = elCdor;
-
-}
-
-
-public void run() {
-
-for (int x=0; x<10000; ++x)
-
-unContador.contar();
+    int obtenerValor(){
+        return valor;
+    }
 
 }
-
-}
-
