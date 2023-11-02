@@ -60,7 +60,7 @@ public class Ferry {
     }
 
     public synchronized void terminarViaje() {
-        System.out.println("----EL VIAJE EN FERRY ACABA DE TERMINAR----");
+        System.out.println("----EL VIAJE EN FERRY TERMINÓ----");
         viajeTerminado = true;
         this.notifyAll();
     }
