@@ -2,7 +2,6 @@
 
 package tp6.ej7;
 
-
 public class main {
 
     public static void main(String[] args) {

@@ -18,7 +18,7 @@ public class ControlFerry extends Thread {
             ferry.empezarViaje();
 
             try {
-                Thread.sleep(1225);
+                Thread.sleep(1500);
             } catch (InterruptedException ex) {
                 Logger.getLogger(ControlFerry.class.getName()).log(Level.SEVERE, null, ex);
             }
