@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-//Hilo control del ferry
+// Hilo control del ferry
 public class ControlFerry extends Thread {
 
     private Ferry ferry;

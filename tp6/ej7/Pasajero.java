@@ -15,7 +15,7 @@ public class Pasajero extends Thread {
     }
 
     public void run() {
-        //Pasajero intenta ingresar al ferry
+        // Pasajero intenta ingresar al ferry
         ferry.ingresar();
 
         try {
@@ -24,7 +24,7 @@ public class Pasajero extends Thread {
             Logger.getLogger(Pasajero.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        //Pasajero se baja del ferry
+        // Pasajero se baja del ferry
         ferry.bajarse();
     }
 }

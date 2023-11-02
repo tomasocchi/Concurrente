@@ -15,7 +15,7 @@ public class Autito extends Thread {
     }
 
     public void run() {
-        //Auto desea ingresar al ferry
+        // Auto desea ingresar al ferry
         ferry.ingresar();
 
         try {
@@ -24,7 +24,7 @@ public class Autito extends Thread {
             Logger.getLogger(Autito.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        //Auto se baja del Ferry
+        // Auto se baja del Ferry
         ferry.bajarse();
     }
 
